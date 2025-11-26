@@ -14,6 +14,7 @@ def driver():
     chrome_options.add_argument("--window-size=1920,1080")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--headless")
 
     service = ChromeService()
     driver = webdriver.Chrome(service=service, options=chrome_options)
